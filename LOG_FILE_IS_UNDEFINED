@@ -1,0 +1,8 @@
+2016-07-25 22:42:00.798  WARN 57058 --- [XMemcached-HeartBeatPool[MemcachedClient-0]-13] n.r.xmemcached.impl.MemcachedHandler     : Session(127.0.0.1:6081) heartbeat fail 4 times,close session and try to heal it
+2016-07-25 22:42:00.799  WARN 57058 --- [XMemcached-HeartBeatPool[MemcachedClient-0]-13] c.g.c.y.core.impl.AbstractController     : Remove a session: 127.0.0.1:6081
+2016-07-25 22:42:02.802  WARN 57058 --- [Heal-Session-Thread] c.g.c.y.core.impl.AbstractController     : Trying to connect to 127.0.0.1:6081 for 1 times
+2016-07-25 22:42:02.803  WARN 57058 --- [Xmemcached-Reactor-0] c.g.c.y.core.impl.AbstractController     : Add a session: 127.0.0.1:6081
+2016-07-25 22:43:09.234  WARN 57058 --- [XMemcached-HeartBeatPool[MemcachedClient-0]-13] n.r.xmemcached.impl.MemcachedHandler     : Session(127.0.0.1:6080) heartbeat fail 4 times,close session and try to heal it
+2016-07-25 22:43:09.235  WARN 57058 --- [XMemcached-HeartBeatPool[MemcachedClient-0]-13] c.g.c.y.core.impl.AbstractController     : Remove a session: 127.0.0.1:6080
+2016-07-25 22:43:11.241  WARN 57058 --- [Heal-Session-Thread] c.g.c.y.core.impl.AbstractController     : Trying to connect to 127.0.0.1:6080 for 1 times
+2016-07-25 22:43:11.243  WARN 57058 --- [Xmemcached-Reactor-0] c.g.c.y.core.impl.AbstractController     : Add a session: 127.0.0.1:6080
