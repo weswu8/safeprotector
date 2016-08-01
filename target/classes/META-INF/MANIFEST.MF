@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: SafeProtector
-Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: wuwesley
-Implementation-Vendor-Id: com.ecommerce.flashsales
-Build-Jdk: 1.8.0_102
-Created-By: Maven Integration for Eclipse
-Implementation-Vendor: Pivotal Software, Inc.
-

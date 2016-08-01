@@ -40,7 +40,9 @@ import net.rubyeye.xmemcached.exception.MemcachedException;
 @RestController
 @RequestMapping("/")
 public class  SafeProtector {	
-    @Autowired
+	/*** indicate current version of this micro service ***/
+	public final String cVersion = "1.0";
+	@Autowired
     private MemcachedClient memcachedClient;
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
     private final String allBadGuysKey = "xAllBadGuysKey";
@@ -383,6 +385,7 @@ public class  SafeProtector {
  				safeValidationR.setSessionID(sid);
  				safeValidationR.setUserID(userid);
  				safeValidationR.setIsBadGuy(false);
+ 				safeValidationR.setVersion(cVersion);
  				/*** rate limiter checking ***/
  				if (SafeProtectorApplication.rateLimiter.consume(consumeCount) == false){
  					safeValidationR.setIsThrottled(true);
