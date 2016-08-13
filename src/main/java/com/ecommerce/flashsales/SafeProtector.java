@@ -44,7 +44,7 @@ public class  SafeProtector {
 	public final String cVersion = "1.0";
 	@Autowired
     private MemcachedClient memcachedClient;
-    private final Logger logger = LoggerFactory.getLogger(this.getClass());
+    private final Logger logger = LoggerFactory.getLogger("SystemLog");
     private final String allBadGuysKey = "xAllBadGuysKey";
     private final String allBadIPsKey = "xAllBadIPsKey";
     private final String xNameSpace = "SafeProtector";
