@@ -37,6 +37,8 @@ System Architecture
 
 Service API
 ====
+|Name |Path | Method  |  Request Body   |  Response Body  |
+|-----|-----|---------|-----------------|-----------------|
 |doSafeValidtion|/validate/sid/{sid}}/userid/{uid}/clientip/{ip}|GET| None |{"sessionID":"SID0000001","userID":"FS00000001","isBadGuy":true,"clientIP":"202.100.100.1","isBadIP":true,"isAllowed":false,"isThrottled":false,"version":"1.0"}|
 |addBadGuy|/badguy/add | POST | {"userID":"FS00000001", "isBadGuy":true}|{"userID":"UID2000000095","isBadGuy":true}|
 |addBadIP|/badip/add | POST | {"clientIP":"202.100.100.1", "isBadIP":true}|{"clientIP":"202.100.100.1", "isBadIP":true}|
