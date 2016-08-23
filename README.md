@@ -37,7 +37,15 @@ System Architecture
 
 Service API
 ====
-To-do
+|doSafeValidtion|/validate/sid/{sid}}/userid/{uid}/clientip/{ip}|GET| None |{"sessionID":"SID0000001","userID":"FS00000001","isBadGuy":true,"clientIP":"202.100.100.1","isBadIP":true,"isAllowed":false,"isThrottled":false,"version":"1.0"}|
+|addBadGuy|/badguy/add | POST | {"userID":"FS00000001", "isBadGuy":true}|{"userID":"UID2000000095","isBadGuy":true}|
+|addBadIP|/badip/add | POST | {"clientIP":"202.100.100.1", "isBadIP":true}|{"clientIP":"202.100.100.1", "isBadIP":true}|
+|findAllBadGuys|//badguy/all | GET | None | [{"userID":"UID0001000098","isBadGuy":true}]|
+|findAllBadIPs|/badip/all | GET | None | [{"clientIP":"10.100.100.1","isBadIP":true}]|
+|getBadGuy|/badguy/userid/{uid}| GET| None | {"userID":"FS00000001","isBadGuy":false} |
+|getBadIP|/badip/clientip/{ip}| GET| None | {"clientIP":"202.100.100.1","isBadIP":true} |
+|removeBadGuy|/delete/userid/{uid}|DELETE| None |{"userID":"FS00000001","isBadGuy":false}|
+|removeBadIP|/delete/clientip/{ip}|DELETE| None |{"clientIP":"202.100.100.1","isBadIP":false}|
 
 Performance
 ====
